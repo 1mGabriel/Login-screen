@@ -1,0 +1,26 @@
+.cadastro-form{
+    height: 100%;
+}
+.cadastro-content{
+    height: 100%;
+    padding: 35px;
+}
+.cadastro-content input {
+    padding: 10px;
+    border: none;
+      background-color: #ffffff0a;
+    border-bottom: 1px solid #fff;
+  }
+  .cadastro-content p{
+    color: #fff;
+    text-align: center;
+  }
+  .cadastro-content a{
+    color: #fff;
+  }
+  .cadastro-content input[type ="submit"]{
+    width: 100%;
+  }
+  .cadastro-content p.not-equal{
+    color: rgb(201, 76, 76);
+  }

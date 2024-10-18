@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "K2D";
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.gradient {
+  /* Primeiro passo: definir um degradê como fundo */
+  background-image:  linear-gradient(188deg, rgba(100,93,206,1) 0%, rgba(65,54,210,1) 98%);
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+  
+}
+label{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  margin: 30px 0;
+}
+span{
+  color: #fff;
+  font-weight: bold;
+}
+#button{
+background-color: #FFF;
+padding: 20px;
+margin: 10px 0;
+border: 1px solid transparent;
+font-weight: bold;
+font-size: 16px;
+border-radius: 10px;
+transition: .4s;
+}
+
+#button:hover{
+color: #fff;
+border: 1px solid #fff;  /* Primeiro passo: definir um degradê como fundo */
+background: rgb(105,98,201);
+background: linear-gradient(188deg, rgb(86, 77, 209) 0%, rgba(52,48,99,1) 98%);
+}
+
+
+@media (max-width:428px){
+  body{
+    overflow-y: scroll;
+    height: 100%;
+  }
+  h1{
+    font-size: 32px;
+  }
+  p{
+    font-size:15px ;
+  }
+}
